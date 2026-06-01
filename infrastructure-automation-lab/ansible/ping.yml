@@ -1,0 +1,5 @@
+- name: Test connection with managed nodes
+  hosts: kali
+  tasks:
+    - name: Ping managed node
+      ansible.builtin.ping:
