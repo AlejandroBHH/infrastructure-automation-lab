@@ -1,0 +1,9 @@
+- name: Install Git on Kali
+  hosts: kali
+  become: true
+
+  tasks:
+    - name: Install Git
+      ansible.builtin.apt:
+        name: git
+        state: present
